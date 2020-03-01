@@ -1,0 +1,44 @@
+{
+  "BUTTONS": {
+    "GO_TO_STYLE_TEST": "Go to style test",
+    "GO_TO_JS_TEST": "Go to javascript test",
+    "HOME": "Home",
+    "SEARCH": "Search"
+  },
+  "TITLES": {
+    "STYLING_TEST": "Styiling test",
+    "JS_TEST": "Javascript test",
+    "WEATHER_SERVICE": "Weather Service"
+  },
+  "LABELS": {
+    "ALL": "All",
+    "ORDER_BY": "Order by",
+    "AVERAGE_TEMP": "Average temperature",
+    "WEATHER_STATES": "States",
+    "TEMP_MIN": "Minimun temperature",
+    "TEMP_MAX": "Max temperature",
+    "SELECT_ORDER": "Select order..."
+  },
+  "MESSAGES": {
+    "NO_RESULTS": "There are not results availables",
+    "LOADING": "Loading",
+    "INVALID_SEARCH": "You must type a location and must not be greater than 50 characters"
+  },
+  "LANGS": {
+    "SPANISH": "Spanish",
+    "ENGLISH": "English"
+  },
+  "WEATHER_STATES": {
+    "ALL": "All",
+    "SN": "Snow",
+    "SL": "Sleet",
+    "H": "Hail",
+    "T": "Thunderstorm",
+    "HR": "Heavy Rain",
+    "LR": "Light Rain",
+    "S": "Showers",
+    "HC": "Heavy Cloud",
+    "LC": "Light Cloud",
+    "C": "Clear"
+  }
+}

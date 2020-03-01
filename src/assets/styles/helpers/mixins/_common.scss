@@ -1,0 +1,68 @@
+// ----------------------------------------------------------------
+// Debug Utils
+// ----------------------------------------------------------------
+// Debug border/outline
+@mixin debug($color: red, $outline: false) {
+  $allow-debug: true !default;
+  @if $outline {
+      outline: 1px solid $color;
+  }
+  @else {
+      border: 1px solid $color;
+  }
+}
+
+
+
+// ----------------------------------------------------------------
+// Font & text useful Mixins
+// ----------------------------------------------------------------
+// Font-Size
+@mixin fs($font-size:$base-font-size, $lines:1) {
+  font-size: $font-size;
+  font-size: rem($font-size);
+}
+
+// Line-Height
+@mixin lh($lines:$base-line-increment, $font-size:$base-font-size) {
+  line-height: $font-size * $lines;
+  line-height: rem($font-size * $lines);
+}
+
+// Font-Weight
+@mixin fw($weight:$base-font-weight) {
+  font-weight: $weight;
+}
+
+// Font
+@mixin font($font-size:$base-font-size, $lines:$base-line-increment, $weight:$base-font-weight, $font-family: $base-font-family) {
+  @include fs($font-size);
+  @include lh($lines, $font-size);
+  @include fw($weight);
+  font-family: $font-family;
+}
+
+
+// =============================================================================
+// Display Mixins
+// =============================================================================
+/// Provides mixin for displays.
+// Generic
+@mixin display($value) {
+  display: $value;
+  @content;
+}
+
+// Specific display:block. Allows insert related properties with brackets.
+// sample: @include block() {overflow: hidden;}
+@mixin block() {
+  @include display(block);
+  @content;
+}
+
+// Specific display:flex. Allows insert related properties with brackets.
+// sample: @include flexbox() {flex: 1 1 auto; flex-direction: row;}
+@mixin flexbox() {
+  @include display(flex);
+  @content;
+}

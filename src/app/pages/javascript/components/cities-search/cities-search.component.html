@@ -1,0 +1,16 @@
+<div class="cities-search">
+  <div class="cities-search__browser">
+    <input
+      [(ngModel)]="searchType"
+      (keydown.enter)="onSearchClicked()"
+      type="text"
+      class="form-control"
+    />
+    <button class="btn btn-primary" (click)="onSearchClicked()">
+      {{ 'BUTTONS.SEARCH' | translate }}
+    </button>
+  </div>
+  <div *ngIf="showErrorSearch" class="alert alert-danger">
+    {{ 'MESSAGES.INVALID_SEARCH' | translate }}
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div *ngIf="data && data.length !== 0">
+  {{ 'LABELS.AVERAGE_TEMP' | translate }}:
+  <span style="font-size: 1.5em; font-style: italic;"
+    >{{ averageTemp | number:'1.2-2' }}ºC</span
+  >
+</div>
+
+<ul class="list-group mt-2">
+  <div *ngIf="data && data.length === 0" class="alert alert-info">
+    {{ 'MESSAGES.NO_RESULTS' | translate }}
+  </div>
+  <li *ngFor="let data of data" class="list-group-item">
+    <img alt="" [src]="getSrcImg(data.state)" />
+    <span>{{ data.title }}</span>
+    <span class="badge badge-secondary"
+      >{{ data.temp | number:'1.2-2' }} ºC</span
+    >
+  </li>
+</ul>

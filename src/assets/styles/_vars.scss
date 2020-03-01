@@ -1,0 +1,85 @@
+// =============================================================================
+// Fonts
+// =============================================================================
+// Font sizes
+$font-sizes: (12px, // h5
+              16px, // h4
+              17.5px, // h3
+              19.5px, // h2
+              23px // h1
+);
+$s_small: nth($font-sizes, 1); // h5, h6
+$s_normal: nth($font-sizes, 2); // h4
+$s_medium: nth($font-sizes, 3); // h3
+$s_large: nth($font-sizes, 4); // h2
+$s_xlarge: nth($font-sizes, 5); // h1
+// Font weight
+$type-weight: ('light': 300,
+              'regular': 400,
+              'medium': 500,
+              'semibold': 600,
+              'bold': 700
+);
+$w_light: map-get($type-weight, 'light');
+$w_regular: map-get($type-weight, 'regular');
+$w_medium: map-get($type-weight, 'medium');
+$w_semibold: map-get($type-weight, 'semibold');
+$w_bold: map-get($type-weight, 'bold');
+// Font family
+$font-averta: "Averta";
+$font_primary: $font-averta, sans-serif;
+$base-line-increment: 1.2;
+$base-font-size: $s_normal;
+$base-font-weight: $w_regular;
+$base-font-style: normal;
+$base-font-family: $font_primary;
+
+// =============================================================================
+// Colors
+// =============================================================================
+// Generic Colors
+$primary: #3fc4c7;
+$yellow-50: #E8BC00;
+$purple-30: #5C5DFF;
+$blue-10: #1BCAFF;
+$gray-50: #808080;
+$gray-40: #999;
+$gray-30: #b2b2b2;
+$gray-5: #f2f2f2;
+$white: #fff;
+$black: #000;
+// Background color
+$global-bg-color: $gray-5;
+
+// =============================================================================
+// Files & Extensions
+// =============================================================================
+$fonts-path: '/assets/fonts/';
+$icons-path: '/assets/icons/';
+$img-path: '/assets/img/';
+$svgext: 'svg';
+$jpgext: 'jpg';
+
+// =============================================================================
+// Breakpoints
+// =============================================================================
+$breakpoints: (
+  huge: 1600px, // 100em
+  desktop: 1200px, // 75em
+  tablet: 768px, // 48em
+  phone: 414px // 25.8em
+);
+$min-device-width:    map-get($breakpoints, 'phone');
+$tablet-device-width: map-get($breakpoints, 'tablet');
+$document-width:      map-get($breakpoints, 'desktop');
+$max-device-width:    map-get($breakpoints, 'huge');
+
+
+
+// Transparency
+$default-transparency: .25;
+$default-transition-time: .4s;
+$default-transition-anim: ease-in-out;
+$transition: all $default-transition-time $default-transition-anim;
+// Generic shadow
+$box-shadow: 0 4px 4px 0 rgba(0, 0, 0, $default-transparency);

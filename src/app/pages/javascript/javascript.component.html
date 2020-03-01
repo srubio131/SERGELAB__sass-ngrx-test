@@ -1,0 +1,17 @@
+<div class="jumbotron">
+  <h1>{{ 'TITLES.WEATHER_SERVICE' | translate }}</h1>
+  <app-cities-search
+    [searchText]="searchText"
+    (newSearch)="onNewSearch($event)"
+  ></app-cities-search>
+  <app-link [to]="''">&larr; {{ 'BUTTONS.HOME' | translate }}</app-link>
+</div>
+
+<div class="container">
+  <app-cities-filters
+    [statesList]="statesList"
+    [filters]="filters"
+    (filterChanges)="onFilterChanges($event)"
+  ></app-cities-filters>
+  <app-cities-list [data]="weatherList"></app-cities-list>
+</div>

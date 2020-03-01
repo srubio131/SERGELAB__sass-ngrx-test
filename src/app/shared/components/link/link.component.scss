@@ -1,0 +1,8 @@
+:host {
+  color: #3fc4c7;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover {
+    text-decoration: underline;
+  }
+}

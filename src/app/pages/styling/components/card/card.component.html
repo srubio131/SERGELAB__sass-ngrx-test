@@ -1,0 +1,50 @@
+<figure class="avatar">
+  <img alt="" [src]="imgSrc" />
+  <figcaption class="description">
+    <h6>Lorem Ipsum</h6>
+    <p>Description</p>
+  </figcaption>
+</figure>
+
+<div class="info">
+  <div>17/09/2019</div>
+  <div>08:05</div>
+</div>
+
+<!-- Lo suyo es sacar un componente angular al que le pases un color y un porcentaje
+y ponerlo tres veces aquí. No repetir este bloque de código. -->
+<div class="phases">
+  <div *ngIf="!phase1" (click)="phase1 = true" class="btn-add"></div>
+  <div *ngIf="phase1" class="progressbar-container progressbar-container--blue">
+    <div class="bar bar--blue"></div>
+  </div>
+  <div *ngIf="!phase2" (click)="phase2 = true" class="btn-add"></div>
+  <div
+    *ngIf="phase2"
+    class="progressbar-container progressbar-container--purple"
+  >
+    <div class="bar bar--purple"></div>
+  </div>
+  <div *ngIf="!phase3" (click)="phase3 = true" class="btn-add"></div>
+  <div
+    *ngIf="phase3"
+    class="progressbar-container  progressbar-container--yellow"
+  >
+    <div class="bar bar--yellow"></div>
+  </div>
+</div>
+
+<nav class="action-bar">
+  <a class="action" href="/styling"
+    ><img alt="" src="/assets/icons/duplicate.svg"
+  /></a>
+  <a class="action" href="/styling"
+    ><img alt="" src="/assets/icons/edit.svg"
+  /></a>
+  <a class="action action--disabled" href="/styling"
+    ><img alt="" src="/assets/icons/archive.svg"
+  /></a>
+  <a class="action" href="/styling"
+    ><img alt="" src="/assets/icons/view.svg"
+  /></a>
+</nav>

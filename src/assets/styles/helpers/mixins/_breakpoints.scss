@@ -1,0 +1,18 @@
+// =============================================================================
+// BREAKPOINTS
+// =============================================================================
+
+@mixin breakpoint($media) {
+  @if $media == phone {
+      @media only screen and (max-width: $min-device-width) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (max-width: $tablet-device-width) { @content; }
+  }
+  @else if $media == desktop {
+      @media only screen and (min-width: $tablet-device-width) { @content; }
+  }
+  @else {
+      @media screen and ('#{$media}') { @content; }
+  }
+};

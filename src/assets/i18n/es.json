@@ -1,0 +1,43 @@
+{
+  "BUTTONS": {
+    "GO_TO_STYLE_TEST": "Ir al test de estilos",
+    "GO_TO_JS_TEST": "Ir al test de javascript",
+    "HOME": "Inicio",
+    "SEARCH": "Buscar"
+  },
+  "TITLES": {
+    "STYLING_TEST": "Test de estilos",
+    "JS_TEST": "Test de javascript",
+    "WEATHER_SERVICE": "Servicio del tiempo"
+  },
+  "LABELS": {
+    "ORDER_BY": "Ordenar por",
+    "AVERAGE_TEMP": "La temperatura media es",
+    "WEATHER_STATES": "Estados",
+    "TEMP_MIN": "Temperatura mínima",
+    "TEMP_MAX": "Temperatura máxima",
+    "SELECT_ORDER": "Seleccione orden..."
+  },
+  "MESSAGES": {
+    "NO_RESULTS": "No hay resultados disponibles",
+    "LOADING": "Cargando",
+    "INVALID_SEARCH": "Debe indicar una localización y no debe ser mayor de 50 carácteres"
+  },
+  "LANGS": {
+    "SPANISH": "Español",
+    "ENGLISH": "Inglés"
+  },
+  "WEATHER_STATES": {
+    "ALL": "Todos",
+    "SN": "Nieve",
+    "SL": "Aguanieve",
+    "H": "Granizo",
+    "T": "Tormenta eléctrica",
+    "HR": "LLuvia fuerte",
+    "LR": "Lluvia ligera",
+    "S": "Chubascos",
+    "HC": "Muy nublado",
+    "LC": "Poco nublado",
+    "C": "Despejado"
+  }
+}

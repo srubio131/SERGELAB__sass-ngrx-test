@@ -1,0 +1,13 @@
+@font-face {
+    font-family: $base-font-family;
+    src: url($fonts-path + 'Averta-Regular.otf');
+    font-weight: $base-font-weight;
+    font-style: $base-font-style;
+}
+
+@font-face {
+    font-family: $base-font-family;
+    src: url($fonts-path + 'Averta-Semibold.otf');
+    font-weight: $w_semibold;
+    font-style: $base-font-style;
+}

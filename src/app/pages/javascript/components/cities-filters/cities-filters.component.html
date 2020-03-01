@@ -1,0 +1,51 @@
+<form novalidate [formGroup]="filtersForm">
+  <div class="row">
+    <div class="col">
+      <label>{{ 'LABELS.WEATHER_STATES' | translate }}</label>
+      <select
+        formControlName="weatherState"
+        class="custom-select"
+        aria-placeholder="Weather State"
+      >
+        <option [selected]="isSelectedAllState()" value="All"
+          >{{ 'WEATHER_STATES.ALL' | translate }}</option
+        >
+        <ng-container *ngFor="let state of statesList">
+          <option [selected]="state.isSelected" [value]="state.value"
+            >{{ state.name }}</option
+          >
+        </ng-container>
+      </select>
+    </div>
+    <div class="col">
+      <label>{{ 'LABELS.TEMP_MIN' | translate }}</label>
+      <input
+        type="number"
+        [placeholder]="'LABELS.TEMP_MIN' | translate"
+        id="tempMin"
+        name="tempMin"
+        formControlName="tempMin"
+        class="form-control"
+      />
+    </div>
+    <div class="col">
+      <label>{{ 'LABELS.TEMP_MAX' | translate }}</label>
+      <input
+        type="number"
+        [placeholder]="'LABELS.TEMP_MAX' | translate"
+        id="tempMax"
+        name="tempMax"
+        formControlName="tempMax"
+        class="form-control"
+      />
+    </div>
+    <div class="col">
+      <label>{{ 'LABELS.ORDER_BY' | translate }}</label>
+      <select formControlName="orderBy" class="custom-select">
+        <option value="null">{{ 'LABELS.SELECT_ORDER' | translate }}</option>
+        <option value="ASC">Asc</option>
+        <option value="DESC">Desc</option>
+      </select>
+    </div>
+  </div>
+</form>
